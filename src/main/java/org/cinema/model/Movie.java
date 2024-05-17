@@ -11,6 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 @ToString
+@EqualsAndHashCode
 public class Movie {
     private String title;
     private LocalDate releaseDate;

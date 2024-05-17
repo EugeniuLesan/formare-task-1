@@ -9,6 +9,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @ToString
 @Builder
+@EqualsAndHashCode
 public class Director {
     private String firstName;
     private String lastName;

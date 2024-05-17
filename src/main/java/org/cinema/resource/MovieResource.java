@@ -18,7 +18,7 @@ import org.cinema.service.MovieService;
 @Produces(MediaType.APPLICATION_JSON)
 public class MovieResource {
     @Inject
-    private final MovieService service;
+    private MovieService service;
 
     @GET
     public Response getMoviesByGenre(@QueryParam("genre") String genre) throws GenreNotFoundException {

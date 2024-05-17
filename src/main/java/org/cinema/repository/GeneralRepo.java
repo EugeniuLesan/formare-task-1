@@ -8,6 +8,7 @@ import org.cinema.model.*;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @ApplicationScoped
@@ -19,7 +20,7 @@ public class GeneralRepo {
     private List<Actor> actors;
 
     @PostConstruct
-    private void init() {
+    protected void init() {
         // actors
         Actor actor1 = Actor.builder()
                 .firstName("John")
@@ -166,8 +167,10 @@ public class GeneralRepo {
                 .genres(List.of(Genre.FANTASY))
                 .build();
 
-        this.actors = List.of(actor1, actor2, actor3, actor4, actor5);
-        this.directors = List.of(director1, director2, director3, director4, director5);
-        this.movies = List.of(movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10);
+        this.actors = new ArrayList<>(List.of(actor1, actor2, actor3, actor4, actor5));
+        this.directors = new ArrayList<>(List.of(director1, director2, director3, director4, director5));
+        this.movies = new ArrayList<>(List.of(movie1, movie2, movie3, movie4, movie5, movie6, movie7, movie8, movie9, movie10));
     }
+
+
 }

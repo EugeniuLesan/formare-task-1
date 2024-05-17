@@ -9,6 +9,7 @@ import java.time.LocalDate;
     @AllArgsConstructor
     @ToString
     @Builder
+    @EqualsAndHashCode
     public class Actor {
         private String firstName;
         private String lastName;
