@@ -9,7 +9,6 @@ import org.cinema.model.Movie;
 import org.cinema.model.Rating;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
@@ -98,4 +97,5 @@ public class ExternalServiceTest {
         Random random = new Random();
         return genres[random.nextInt(genres.length)];
     }
+    //test
 }
